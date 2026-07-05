@@ -1,0 +1,41 @@
+aid: naranga
+url: https://raw.githubusercontent.com/api-evangelist/naranga/refs/heads/main/apis.yml
+name: Naranga
+kind: company
+description: >-
+  Naranga is a cloud-based franchise management platform for franchisors and
+  multi-location brands, covering franchise sales CRM and lead management
+  (emaximation), operations and multi-location support (nCompass), employee
+  and franchisee training (nSpire), field audits and inspections, task and
+  job scheduling, and local/multi-channel marketing. API access model: Naranga
+  does NOT publish a documented public or self-serve developer API. There is no
+  developer portal, no published API reference, no OpenAPI/Swagger definition,
+  no SDKs, and no self-serve API keys as of this entry. Integrations with
+  third-party systems (for example Twilio, RingCentral, Microsoft 365,
+  AssureSign, and lead-capture/Zapier-style connectors) exist but are delivered
+  through Naranga's partner and professional-services onboarding (typically a
+  multi-week implementation scoped per brand), not through open, documented,
+  developer-facing endpoints. Pricing is quote-based / contact-sales.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Franchise Management
+- Franchise Operations
+- Lead Management
+- CRM
+- Training
+- Field Audits
+- Multi-Location
+- SaaS
+- No Public API
+created: '2026-07-04'
+modified: '2026-07-04'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/naranga-llc
+- type: Website
+  url: https://naranga.com
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,81 @@
+aid: naranga
+name: Naranga
+review:
+  question: Does Naranga expose a documented public WebSocket API?
+  answer: false
+  date: '2026-07-04'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was authored. Naranga does not publish any
+    documented public API at all - REST, WebSocket, or otherwise. There is
+    no developer portal, API reference, or protocol surface to model, so
+    there is nothing (server-push or request/response) on which to base an
+    AsyncAPI or OpenAPI definition.
+findings:
+  summary: |
+    Naranga does not publish a documented public WebSocket API. In fact,
+    Naranga does not publish a documented public developer API of any kind.
+    Naranga is a closed, cloud-based franchise management SaaS platform
+    (franchise sales CRM / lead management "emaximation", the nCompass
+    operations and multi-location support product, the nSpire training
+    product, field audits/inspections, task and job scheduling, and local
+    marketing). Access is via the hosted web applications (for example the
+    nCompass supplier/location portals under *.naranga.com) using normal
+    interactive login - not via developer-facing, programmatic endpoints.
+    No developer portal, API reference, OpenAPI/Swagger definition, SDKs,
+    authentication documentation, sandbox, or self-serve API keys are
+    published anywhere as of the review date. Third-party listings (e.g.
+    API Tracker) show these developer resources as unavailable / not
+    documented.
+  publicApi: |
+    No documented public or self-serve API. Integrations do exist (Twilio,
+    RingCentral, Microsoft 365, AssureSign, and lead-capture / Zapier-style
+    connectors are referenced across Naranga's product pages and reviews),
+    but they are delivered through Naranga's partner and professional-services
+    onboarding - a scoped, multi-week implementation per brand - rather than
+    through open, documented developer endpoints. Any programmatic access is
+    partner-gated and not publicly specified.
+  transports:
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket (ws:// or wss://) endpoint is documented anywhere for Naranga.
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API reference or OpenAPI definition is published. Programmatic/integration access, where it exists, is partner-gated and undocumented.
+    - protocol: Webhook
+      scheme: https
+      documented: false
+      note: Lead-capture / connector-style intake is referenced but not publicly documented as developer-facing webhooks.
+  endpointsModeled: none
+  endpointsConfirmedRest: none
+sources:
+  - url: https://naranga.com
+    type: Website
+    note: Marketing site for the franchise management platform. No developer or API section.
+  - url: https://naranga.com/franchise-operations-software/
+    type: ProductPage
+    note: nCompass operations / multi-location support product. No API documentation.
+  - url: https://naranga.com/lead-management-software/
+    type: ProductPage
+    note: emaximation lead management / franchise sales CRM. Lead capture referenced, no public API.
+  - url: https://apitracker.io/a/naranga
+    type: ThirdPartyListing
+    note: Developer docs, API reference, SDKs, auth, OpenAPI all shown as unavailable / not documented.
+  - url: https://www.getapp.com/operations-management-software/a/naranga/
+    type: ThirdPartyListing
+    note: Reviews/pricing aggregator. Subscription/quote-based pricing; no dedicated API/integration spec.
+  - url: https://www.linkedin.com/company/naranga-llc
+    type: LinkedIn
+    note: Company profile.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No WebSocket surface exists, and no documented public API of any kind
+    exists for Naranga. The apis.yml entry is an honest stub: kind company,
+    empty apis list, and common links limited to the verifiable Website and
+    LinkedIn. No OpenAPI, plans, rate-limits, finops, or collections artifacts
+    were fabricated because no sourced, developer-facing specification exists.
