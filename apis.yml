@@ -16,7 +16,18 @@ description: >-
   through Naranga's partner and professional-services onboarding (typically a
   multi-week implementation scoped per brand), not through open, documented,
   developer-facing endpoints. Pricing is quote-based / contact-sales.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/naranga.png
 tags:
 - Franchise Management
 - Franchise Operations
