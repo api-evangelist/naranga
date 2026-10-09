@@ -33,6 +33,10 @@ accessModel:
   trial: false
   try_now: false
   public: false
+  gated: partner
+  gated_source:
+  - tag:No Public API
+  - description
   label: Unknown
   confidence: low
   source: []
@@ -48,7 +52,6 @@ tags:
 - Field Audits
 - Multi-Location
 - Software-as-a-Service
-- No Public API
 tags_raw:
 - Franchise Management
 - Franchise Operations
@@ -58,7 +61,6 @@ tags_raw:
 - Field Audits
 - Multi-Location
 - SaaS
-- No Public API
 created: '2026-07-04'
 modified: '2026-07-04'
 specificationVersion: '0.23'
@@ -80,3 +82,5 @@ x-lifecycle:
   detail: >-
     The company's own domain returned no A or AAAA record when probed. This is an observation about the domain, not a request from the company.
   indexed: false
+x-tags-removed:
+- No Public API
