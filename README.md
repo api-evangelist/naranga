@@ -1,4 +1,4 @@
-# Naranga (naranga)
+# Naranga
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,53 +64,79 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Naranga is a cloud-based franchise management platform for franchisors and multi-location brands. Its product suite covers franchise sales CRM and lead management (emaximation), operations and multi-location support (nCompass), employee and franchisee training (nSpire), field audits and inspections, task and job scheduling, and local / multi-channel marketing.
+Naranga is a cloud-based franchise management platform for franchisors and multi-location brands, covering franchise sales CRM and lead management (emaximation), operations and multi-location support (nCompass), employee and franchisee training (nSpire), field audits and inspections, task and job scheduling, and local/multi-channel marketing. API access model: Naranga does NOT publish a documented public or self-serve developer API. There is no developer portal, no published API reference, no OpenAPI/Swagger definition, no SDKs, and no self-serve API keys as of this entry. Integrations with third-party systems (for example Twilio, RingCentral, Microsoft 365, AssureSign, and lead-capture/Zapier-style connectors) exist but are delivered through Naranga's partner and professional-services onboarding (typically a multi-week implementation scoped per brand), not through open, documented, developer-facing endpoints. Pricing is quote-based / contact-sales.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/naranga/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/naranga/refs/heads/main/apis.yml)
+**Areas:** Franchise Management · Franchise Operations · Lead Management · CRM · Training · Field Audits · Multi-Location · Software-as-a-Service
 
-## API Access Model (Honest Status)
+## Naranga on APIs.io
 
-**Naranga does not publish a documented public or self-serve developer API.** As of this entry:
+Everything profiled for Naranga is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/naranga/](https://apis.io/providers/naranga/)** — or go straight to one of the APIs or properties below.
 
-- No developer portal.
-- No published API reference.
-- No OpenAPI / Swagger definition.
-- No SDKs.
-- No documented authentication, sandbox, or self-serve API keys.
+### Published properties
 
-Naranga is accessed through its hosted web applications (for example the nCompass supplier and location portals under `*.naranga.com`) via normal interactive login.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Integrations with third-party systems **do** exist and are referenced across Naranga's product pages and third-party reviews - for example Twilio (SMS), RingCentral, Microsoft 365, AssureSign (e-signature), and lead-capture / Zapier-style connectors. However, these are delivered through Naranga's **partner and professional-services onboarding** - a scoped, multi-week implementation per brand - rather than through open, documented, developer-facing endpoints. Any programmatic access is partner-gated and not publicly specified.
+#### Security (1)
 
-Because no sourced, developer-facing specification exists, this repository intentionally contains **no** `openapi/`, `plans/`, `rate-limits/`, `finops/`, or `collections/` artifacts. Nothing was modeled or fabricated. This is an honest stub that documents Naranga's closed access model. If Naranga later publishes developer documentation, this entry should be revisited and the APIs enumerated then.
+Authentication, trust centre, and vulnerability disclosure.
 
-## Pricing
+- [Naranga Domain Security](https://apis.io/security/naranga/naranga-domain-security/)
 
-Quote-based / contact-sales. Naranga does not publish transparent, self-serve pricing tiers; implementation and cost are scoped per brand based on the number of franchisees and the complexity of integrations. Third-party aggregators list a free trial and placeholder starting figures, but no reconciled public rate card is available.
+## Where to find this API
 
-## Tags
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- Franchise Management
-- Franchise Operations
-- Lead Management
-- CRM
-- Training
-- Field Audits
-- Multi-Location
-- SaaS
-- No Public API
-
-## Timestamps
-
-- **Created:** 2026-07-04
-- **Modified:** 2026-07-04
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/naranga-llc)
 - [Website](https://naranga.com)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 3.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/naranga/](https://apis.io/providers/naranga/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Naranga: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/naranga/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
